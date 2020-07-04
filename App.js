@@ -7,7 +7,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Feather } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons'; 
-import { FontAwesome } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons'; 
 
 const styles = StyleSheet.create({
   container: {
@@ -26,9 +26,6 @@ const styles = StyleSheet.create({
     fontSize: 30,
     paddingTop: 15,
     paddingBottom: 15
-  },
-  icon: {
-
   },
   bar: {
     flexDirection: 'row',
@@ -257,7 +254,7 @@ function Alert({ navigation }) {
 <View style={styles.forecast}>
 
 {console.log(data)}
-<Text style={styles.output}>{ (data && Object.keys(data).length !== 0) ? <Text>{data.note} + ' effective ' + {data.effective} + ' and expires at ' + {data.expires}</Text>  : <Text>No weather alerts at this time</Text>}</Text>
+<Text style={styles.output}>{ (data && Object.keys(data).length !== 0) ? <Text>{data.note} effective {data.effective} and expires at {data.expires}</Text>  : <Text>No weather alerts at this time</Text>}</Text>
 </View>)}
   </ScrollView>
   );
