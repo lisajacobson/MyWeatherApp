@@ -1,0 +1,4 @@
+var config = {
+  WEATHER_API_KEY: '1bfd53ccf1bd4a0b9b2190912202206',
+  WEATHERBIT_API_KEY: '5b99c75e08af4aaa82a623f2afbda335'
+}
